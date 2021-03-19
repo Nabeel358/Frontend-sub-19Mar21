@@ -3,7 +3,7 @@ import Carousel from './Carousel';
 import Card from './Card';
 import NavBar from './NavBar';
 import Grid from './Grid';
-
+import Card2 from './Card2';
 
 const cardContent = [
   {
@@ -65,7 +65,7 @@ function App() {
        <Carousel images={['./abudhabi1.jpg', './house1.jpg']}/>
 
        { /* Cards go here */ }
-       <div className="container my-4">
+       <div className="container-fluid my-4 mb-5">
          <div className="row">
 
             {
@@ -90,7 +90,28 @@ function App() {
 
       </div>
 
-     
+{/*Card2 included here*/}
+<div>
+<Card2 className="bg-white">
+
+</Card2>
+
+</div>
+
+
+      {/*Grid*/}
+      <div className="container-fluid border border-3 mt-5">
+         <div className="row ">
+   
+         <Grid
+         className="bg-white">
+
+
+        </Grid>
+        </div>  
+        </div>
+
+        
 
       { /* Footer navigation */ }
       <NavBar 

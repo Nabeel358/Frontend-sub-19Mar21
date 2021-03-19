@@ -2,23 +2,24 @@ import React, { useState } from 'react';
 import Carousel from './Carousel';
 import Card from './Card';
 import NavBar from './NavBar';
+import Grid from './Grid';
 
 
 const cardContent = [
   {
-    title: 'Visit Dubai',
-    description: 'Dubai is the commercial center of UAE',
-    imgSrc: './abudhabi1'
+    title: 'Affordable properties',
+    description: 'Something for everyone',        
+    imgSrc: './house2.jpg'
   },
   {
-    title: 'Explore Abu Dhabi',
-    description: 'Click to learn about the beautiful capital of the UAE',
-    imgSrc: './zayed-mosque.jpg'
+    title: 'Explore our villas',
+    description: 'In the heart of Abu Dhabi',
+    imgSrc: './house3.jpg'
   },
   {
-    title: 'Ras Al Khaimah Tour',
-    description: 'The natural resort of the UAE. Click here to learn more!',
-    imgSrc: 'https://images.unsplash.com/photo-1591609282229-c080f8c25ef4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80'
+    title: 'Book apartment tour',
+    description: 'For bachelors and families',
+    imgSrc: './apartment1.jpg'
   },
 ]
 
@@ -31,15 +32,15 @@ const cardContent = [
 
 return (<button className="btn-light">{state}</button>) */}
 
+<body style="background-color: red"></body>
 
-
-function App() {
+function App() { 
   return (
     <div>
 
       { /* Main navgation */ }
       <NavBar 
-        brand="My App" 
+        brand="OwnHomes" 
         links={
           [
             {
@@ -58,10 +59,10 @@ function App() {
         } 
       />
 
-      <div className="content" style={{minHeight: 'calc(100vh - 112px)'}}>
+      <div className="content" style={{minHeight: 'calc(100vh - 150px)'}}>
        
        { /* Carousel goes here */ }
-       <Carousel images={['./zayed-mosque.jpg', './dubai-night.jpg']}/>
+       <Carousel images={['./abudhabi1.jpg', './house1.jpg']}/>
 
        { /* Cards go here */ }
        <div className="container my-4">
@@ -89,9 +90,11 @@ function App() {
 
       </div>
 
+     
+
       { /* Footer navigation */ }
       <NavBar 
-        brand="My App" 
+        brand="OwnHomes" 
         links={
           [
             {
